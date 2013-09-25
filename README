@@ -1,0 +1,13 @@
+安装
+当前目录
+1, /path/to/phpize
+2, ./configure --with-php-config=/path/to/php-config
+2, make
+
+测试:
+/path/to/php -c php.ini -f t.php
+
+phpize,php-config以及php的版本以及编译条件要保持一致
+t.php有几个例子,和php实现的版本.
+php.ini需要修改
+目前加解密最多支持到64bit下的PHP_INT_MAX,考虑性能问题没做更大数的支持
